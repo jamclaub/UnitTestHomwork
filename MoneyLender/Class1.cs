@@ -71,7 +71,7 @@ namespace MoneyLender
                 throw new ArgumentOutOfRangeException("amount", amount, CreditAmountLessThanZeroMessage);
             }
 
-            m_balance = m_balance - amount; // was unsure if the original was correct, it looked wrong as well so changed it.
+            m_balance += amount;
         }
 
         public void FreezeAccount()

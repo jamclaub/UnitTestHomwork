@@ -105,10 +105,10 @@ namespace MoneyLenderTest
         [TestMethod]
         public void AccountGetsUpdatedAndIsHunkyDory()
         {
-            double beginningBalance = 11.99;
-            double creditAmount = 4.55;
-            double expected = 7.44;
-            BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);
+            double beginningBalance = 10.00;
+            double creditAmount = 5.11;
+            double expected = 15.11;
+            BankAccount account = new BankAccount("Sir Buckinghaam", beginningBalance);
 
             // act  
             account.Credit(creditAmount);
